@@ -1,0 +1,128 @@
+.plan-h{
+    margin-top: 10rem;
+}
+
+.about-top-section-plan {
+    background-image: url('/images/plan.png.jpg');
+    background-size: cover; /* Makes sure the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 46rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.txt-plan{
+     display: flex; 
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.about-span-plan{
+    font-size: 2rem;
+    color: var(--color-gray-100);
+    font-weight: bolder;
+}
+.about-detail-span-plan{
+    font-size: 1.1rem;
+    color: var(--color-gray-100);
+    width: 36rem;
+}
+
+.cards-plan-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    place-items: center;
+}
+.plan-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background-color: var(--color-gray-500);
+   height: 30rem;
+width: 26rem;
+    gap: 2rem;
+    border-radius: 0rem 3rem 0rem 3rem;
+    transition: all 400ms ease-in-out;
+}
+.plan-name{
+    font-size: 1.8rem;
+    color: var(--color-gray-100);
+    font-weight: 600;
+}
+.plan-detail{
+    font-size: 1.1rem;
+    color: var(--color-gray-100);
+    width: 23rem;
+}
+.plan-price{
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.month{
+    font-size: 1.6rem;
+    color: var(--color-gray-400);
+    font-weight: 600;
+
+}
+
+.plan-btn {
+    width: 10rem;
+    position: relative;
+    height: 3rem;
+    border: 2px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .plan-btn::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: var(--color-gray-500);
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .plan-btn::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: var(--color-gray-500);
+    transition: 0.5s;
+  }
+  
+  .plan-btn:hover::before, .plan-btn:hover::after {
+    transform: scale(0)
+  }
+  
+  .plan-btn:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+
+@media screen and (max-width:770px) {
+    .cards-plan-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        grid-gap: 3rem;
+    }
+}

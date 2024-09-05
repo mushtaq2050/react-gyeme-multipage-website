@@ -1,0 +1,113 @@
+
+.question-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.top-text-question{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.question-svg-container{
+        background: var(--color-gray-500);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 40%;
+}
+.question-svg-container svg{
+    color: #ffb116;
+}
+.faqs{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-gray-100);
+}
+.accordian{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.accordian-button{
+    display: flex;
+    align-items: center;
+    gap: 25rem;
+}
+.item-heading{
+    color: var(--color-gray-100);
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* width: 20rem; */
+}
+.item-icon{
+  font-size: 2rem;
+  color: var(--color-gray-100);
+}
+.accordiat-detail{
+    font-size: 1.2rem;
+    color: var(--color-gray-100);
+    width: 43rem;
+    /* padding-right:rem; */
+}
+.accordian-item{
+    background-color: var(--color-gray-500);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 53rem;
+    /* align-items: center; */
+    align-items: flex-start;
+    padding: 2.5rem 2rem;
+    border-radius: .7rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1050px) {
+    .accordian{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 3rem;
+        grid-column-gap: 2rem;
+        /* align-items: flex-start; */
+        justify-content: center;
+    }
+}
+@media screen and (max-width:410px){
+    .item-icon{
+        font-size: 1.5rem;
+        color: var(--color-gray-100);
+      }
+    .item-heading{
+        color: var(--color-gray-100);
+        font-size: 1.1rem;
+        width: 15rem;
+        font-weight: 600;
+        /* width: 20rem; */
+    }
+    .accordiat-detail{
+        font-size: 1rem;
+        color: var(--color-gray-100);
+        width: 40rem;
+        /* padding-right:rem; */
+    }
+    .accordian-item{
+        background-color: var(--color-gray-500);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 45rem;
+        /* align-items: center; */
+        align-items: flex-start;
+        padding: 2.5rem 2rem;
+        border-radius: .7rem;
+        cursor: pointer;
+    }
+}
